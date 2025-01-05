@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html{
+
+  scroll-behavior: smooth;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav{
+  background-color: rgb(1, 5, 55);
+  overflow: hidden;
+  padding: 10px;
+
+}
+.App-Header{
+  text-align: center;
+
+
+
+}
+
+.topnav a {
+  float: left;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.App-Header{
+  background-color:rgb(27, 67, 79)
+}
+.home{
+
+  
+}
+
+.topnav a:hover{
+  color: black;
+  background-color: antiquewhite;
+
+}
+.topnav a.active{
+background-color:purple ;
+color: white;
+}
+.personal{
+   height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: normal;
+  color: aliceblue;
+ 
+  text-align: center;
+  background-color: rgb(11, 37, 44)
+
+
+}
+.edu{
+
+  font-size: xx-large
+}
