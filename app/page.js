@@ -95,26 +95,21 @@ export default function Home() {
    <div className=' text-center text-lg leading-loose w-96  pl-2  container mb-10  mt-20 rounded-lg mx-auto font-inter'>
 <p> I'm a freshman Computer Science and Engineering student at The Ohio State University, pursuing a minor in Economics.
 </p>
-<div className="flex h-14 justify-center h-screen max-h-16 ">
+<div className="flex h-14 justify-center h-screen mr-10 max-h-16 ">
 
+<div className="flex items-center space-x-4">
+  <a className="font-bold" href="https://linkedin.com/in/agastya-mishra-745a38296/" loading="lazy">
+    <img className="mr-10 animate-pulse mt-3" src="4-1-removebg-preview.png" width="75" height="75" />
+  </a>
 
+  <a className="font-bold" href="https://music.youtube.com/playlist?list=PLXf6D_gSAq1FyMEbszuTAxY2nKol31DsK&si=mXgIubfzqVkz7T9H">
+    <img className="mr-5 mt-5 animate-pulse" src="Youtube_Music_icon.svg-removebg-preview.png" width="50" height="50" loading="lazy" />
+  </a>
 
-<a className="font-bold" href = 'https://linkedin.com/in/agastya-mishra-745a38296/'  loading = 'lazy'>
-<img className=" ml-5 animate-pulse mt-3" src = '4-1-removebg-preview.png' width = '75' height = '75'></img>
-</a>
-
-<a className="font-bold mt-10" href = 'https://music.youtube.com/playlist?list=PLXf6D_gSAq1FyMEbszuTAxY2nKol31DsK&si=mXgIubfzqVkz7T9H'>
-<img className=" ml-5 animate-pulse" src = 'Youtube_Music_icon.svg-removebg-preview.png  'width = '35' height = '35'  loading = 'lazy'></img>
-
-</a>
-
-
-
-<a className="font-bold " href = 'https://github.com/24amishra'>
-
-
-<img src =' github-removebg-preview.png ' className=" ml-5 mt-9 animate-pulse'" width = '75' height = '75' loading = 'lazy' ></img>
-</a>
+  <a className="font-bold" href="https://github.com/24amishra">
+    <img src="git.png" className="ml-5 mt-4 animate-pulse" width="50" height="50" loading="lazy" />
+  </a>
+</div>
 
 </div>
 
