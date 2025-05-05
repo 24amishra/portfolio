@@ -29,15 +29,15 @@ console.log(whichState)
         
         break;
     case 4:
-        var string = 'dentvision';
+        var string = 'Created full stack ML driven prediction app for determining presence of disease in dental images. Created a Neural Network model with an accuracy score 0f 70% using Pytorch and data collected from Kaggle. Utilized React.js to create interactive UI that displayed prediction result and probability determined by Neural Network. Provided users a diagnosis in under one second through API calls from Flask back-end server';
         break;
     
     case 5:
-        var string = 'mm pred'
+        var string = ' Used Scikit-Learn Random Forest Classifier function to estimate the probability of success for each March Madness basketball team in the men’s tournament. Achieved a cross-validation accuracy score of 89% with CV = 10. Utilized Pandas for data management and model training';
         break;
     case 6:
-        var string = 'scheddy'
-        break
+        var string = '• Harnessed data from MongoDB cluster collection using Get/Fetch JS API method on backend. Randomly generated daily lunch and dinner schedules based on dietary preference (low fat, high protein, etc.) using information from collection. Presented data for the user on the browser in table format, utilizing Node.js to handle serverside JS.';
+        break;
 
   }
   

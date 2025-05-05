@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import Edu from "./Edu"; 
+import Edu from "./education/page"; 
 
 
 

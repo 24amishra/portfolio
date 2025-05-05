@@ -28,7 +28,7 @@ body {
 }
 
 .topnav{
-  background-color: rgb(1, 5, 55);
+  background-color: rgb(6, 11, 84);
   overflow: hidden;
   padding: 10px;
 
@@ -48,9 +48,11 @@ body {
 }
 
 .App-Header{
-  background-color:rgb(27, 67, 79)
+  background-color:rgb(3, 9, 38)
 }
-.home{
+.Edu{
+  background-color:rgb(3, 9, 38)
+
 
   
 }
@@ -74,7 +76,7 @@ color: white;
   color: aliceblue;
  
   text-align: center;
-  background-color: rgb(11, 37, 44)
+  background-color: rgb(0, 0, 0)
 
 
 }
