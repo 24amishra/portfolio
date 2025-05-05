@@ -15,6 +15,9 @@ import { TypeAnimation } from "react-type-animation";
 
 //add viewport detector to trigger color changes/animations on entry/depart
 //lazy load images
+import Head from 'next/head';
+
+
 
 export default function Home() {
   
@@ -23,7 +26,7 @@ export default function Home() {
    
  
     <div className='App-Header   space-y-4'>
-      
+      <title>agastyamishra.xyz</title>
     <div className = "topnav text-lg">
 
 <a className = "home" href = "/">About me</a>
