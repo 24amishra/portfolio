@@ -35,6 +35,8 @@ return(
 </div>
 
 <div className="Edu">
+<title>Agastya Mishra Portfolio</title>
+
   <header className='text-center text-5xl font-inter pt-8 underline decoration-solid mb-10'>
     Experiences
   </header>

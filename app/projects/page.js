@@ -13,6 +13,8 @@ const Proj = () =>{
     const [state,setState ] = useState(0)
     return(
       <div className="Edu">
+              <title>Agastya Mishra Portfolio</title>
+
          <div className = "topnav text-lg">
 
 <a className = "home" href = "/">About me</a>

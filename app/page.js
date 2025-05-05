@@ -26,7 +26,7 @@ export default function Home() {
    
  
     <div className='App-Header   space-y-4'>
-      <title>agastyamishra.xyz</title>
+      <title>Agastya Mishra Portfolio</title>
     <div className = "topnav text-lg">
 
 <a className = "home" href = "/">About me</a>
