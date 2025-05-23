@@ -67,7 +67,7 @@ export default function Home() {
 <div className= 'text-2xl font-inter p-8 text-center font-bold'>
 
 <TypeAnimation
-      sequence={["Hey!", 2000, "My name is Agastya.", 2000]}
+      sequence={["My name is Agastya Mishra.", 2000, "I like building apps.", 2000]}
       speed={50}
       repeat={Infinity}
     />
