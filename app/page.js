@@ -48,6 +48,14 @@ export default function Home() {
 
 
 <div>
+<motion.div
+ initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="text-lg"
+  
+  >
     <header className='App-Header  '>
 <section id = 'intro'> 
 
@@ -126,6 +134,7 @@ export default function Home() {
   className="text-lg"
   
   >
+    
 
 
  
@@ -156,7 +165,9 @@ I began my programming journey in High School with an introduction to Python and
   
 </section>
 </header>
+</motion.div>
 </div>
+
 
 
 
