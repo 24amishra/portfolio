@@ -19,27 +19,11 @@ return(
 
 <div className='bg-hsl(230, 85.40%, 8.00%)'>
   
-<div className = "topnav text-lg">
 
-<a className = "home" href = "/">About me</a>
-<a href = "/education"> Experience</a>
-<a href = "/projects"> Projects</a>
-<a href = "/"> Contact me</a>
-
-
-
-
-
-
-
-</div>
 
 <div className="Edu">
 <title>Agastya Mishra Portfolio</title>
 
-  <header className='text-center text-5xl font-inter pt-8 underline decoration-solid mb-10'>
-    Experiences
-  </header>
  
 
   <section className="text-white" id='experience'>
@@ -61,7 +45,13 @@ return(
         alt="custom icon" 
         className="w-full h-full object-cover rounded-full" 
       />
-    }  >    <h4 className=" text-white vertical-timeline-element-title">Risk/Fraud Tech Intern @ Huntington National Bank</h4>
+    }  >   
+    
+    <h3 className=" text-white vertical-timeline-element-title">Software Engineering Intern</h3>
+    <h4 className="text-white vertical-timeline-element-subtitle">Huntington Bank</h4>
+    <p>
+    Worked on the Fraud Prevention team to limit fraudulent account registrations for checking accounts.
+    </p>
 
 
   </VerticalTimelineElement>

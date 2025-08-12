@@ -15,24 +15,8 @@ const Proj = () =>{
       <div className="Edu">
               <title>Agastya Mishra Portfolio</title>
 
-         <div className = "topnav text-lg">
 
-<a className = "home" href = "/">About me</a>
-<a href = "/education"> Experience</a>
-<a href = "/projects"> Projects</a>
-<a href = "/"> Contact me</a>
-
-
-
-
-
-
-
-</div>
-
-    <div className="mt-10 text-center text-5xl font-inter pt-8 mb-10">
-    Projects
-  </div>
+ 
   
   <div className="flex flex-row flex-wrap justify-center gap-6 Edu px-4">
   <section id="projects" className="flex flex-wrap justify-center gap-6 w-full max-w-6xl mx-auto">
