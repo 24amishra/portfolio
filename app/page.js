@@ -81,7 +81,7 @@ export default async function Home() {
       company: 'Big Data Analytics Association',
       date: 'Dec 2024 \u2013 Present',
       description: 'Leading the premier data science organization at Ohio State',
-      logo: '/club.png',
+      logo: '/bdaa.png',
     },
   ];
 
