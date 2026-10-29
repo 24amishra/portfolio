@@ -41,16 +41,16 @@ export default async function Home() {
       role: 'Technical Product Development Intern',
       company: 'Capital One',
       date: 'Summer 2026',
-      description: 'Card Analytics team.',
-      logo: null,
+      description: 'Worked on the Data Modelling and Decisioning Credit Team to help build data lineage tracking tools with AI.',
+      logo: '/capitalone.png',
       initial: 'C',
     },
     {
     role: 'Campus Ambassador',
     company: 'AWS',
     date: 'Mar 2026 \u2013 Present',
-    description: 'Growing AWS on campus.',
-    logo: null,
+    description: 'Growth for AWS on campus.',
+    logo: '/aws.png',
     initial: 'A',
     },
     {
@@ -66,21 +66,21 @@ export default async function Home() {
       company: 'Lifestyle Lab, OSU Cancer Center',
       date: 'Dec 2024 \u2013 Dec 2025',
       description: 'Built agentic platform for 30+ daily cancer survivors with RAG architecture and Fitbit integration.',
-      logo: '/re.png',
+      logo: '/osu.png',
     },
     {
       role: 'Software Engineering Intern',
       company: 'Huntington Bank',
       date: 'May \u2013 Aug 2025',
-      description: 'Deployed fraud detection APIs processing 100K+ daily interactions with Spring Boot and Kafka.',
-      logo: '/check.png',
+      description: 'Deployed fraud detection APIs processing 100K+ daily interactions, mainly with Spring Boot.',
+      logo: '/huntington.png',
     },
     
     {
-      role: 'Projects Director',
+      role: 'Vice President',
       company: 'Big Data Analytics Association',
       date: 'Dec 2024 \u2013 Present',
-      description: 'Facilitating AI/ML workshops for 200+ students and directing inaugural project series.',
+      description: 'Leading the premier data science organization at Ohio State',
       logo: '/club.png',
     },
   ];
@@ -107,50 +107,50 @@ export default async function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-neutral-300">
+    <div className="min-h-screen bg-white text-neutral-700">
       <main className="max-w-2xl mx-auto px-6 py-24">
 
         {/* ── Intro ── */}
         <header className="mb-20">
-          <h1 className="text-2xl font-semibold tracking-tighter text-white">
+          <h1 className="text-2xl font-semibold tracking-tighter text-neutral-900">
             Agastya Mishra
           </h1>
-          <p className="text-sm text-neutral-500 mt-4 leading-6 max-w-lg">
+          <p className="text-sm text-neutral-600 mt-4 leading-6 max-w-lg">
             {"Hey! I'm Agastya, a Computer Science and Engineering student at Ohio State with a minor in Economics. I enjoy building user-oriented products and learning about new technologies. In my free time, I like watching sports and movies."}
           </p>
           <nav className="flex gap-5 mt-5 text-sm text-neutral-500">
-            <a href="https://linkedin.com/in/agastya-mishra-osu" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-700 underline-offset-2 hover:text-green-400 hover:decoration-green-400/50 transition-colors duration-150">LinkedIn</a>
-            <a href="https://github.com/24amishra" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-700 underline-offset-2 hover:text-green-400 hover:decoration-green-400/50 transition-colors duration-150">GitHub</a>
-            <a href="https://letterboxd.com/script1234" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-700 underline-offset-2 hover:text-green-400 hover:decoration-green-400/50 transition-colors duration-150">Letterboxd</a>
-            <a href="mailto:agastyamishra2006@gmail.com" className="underline decoration-neutral-700 underline-offset-2 hover:text-green-400 hover:decoration-green-400/50 transition-colors duration-150">Email</a>
+            <a href="https://linkedin.com/in/agastya-mishra-osu" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-300 underline-offset-2 hover:text-[#337ab7] hover:decoration-[#337ab7]/50 transition-colors duration-150">LinkedIn</a>
+            <a href="https://github.com/24amishra" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-300 underline-offset-2 hover:text-[#337ab7] hover:decoration-[#337ab7]/50 transition-colors duration-150">GitHub</a>
+            <a href="https://letterboxd.com/script1234" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-300 underline-offset-2 hover:text-[#337ab7] hover:decoration-[#337ab7]/50 transition-colors duration-150">Letterboxd</a>
+            <a href="mailto:agastyamishra2006@gmail.com" className="underline decoration-neutral-300 underline-offset-2 hover:text-[#337ab7] hover:decoration-[#337ab7]/50 transition-colors duration-150">Email</a>
           </nav>
         </header>
 
         {/* ── Experience ── */}
         <section className="mb-20">
-          <h2 className="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-6">Experience</h2>
+          <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-6">Experience</h2>
           <div className="group/list">
             {experiences.map((exp, i) => (
               <div
                 key={i}
-                className="border-b border-neutral-800/60 py-4 first:pt-0 transition-opacity duration-150 group-hover/list:opacity-40 hover:!opacity-100"
+                className="border-b border-neutral-200 py-4 first:pt-0 transition-opacity duration-150 group-hover/list:opacity-40 hover:!opacity-100"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-start gap-3 min-w-0">
-                    <div className="w-6 h-6 rounded-full overflow-hidden border border-neutral-800 flex items-center justify-center bg-neutral-900 shrink-0 mt-0.5">
+                    <div className="w-7 h-7 rounded-full overflow-hidden border border-neutral-200 flex items-center justify-center bg-white shrink-0 mt-0.5">
                       {exp.logo ? (
-                        <Image src={exp.logo} alt={exp.company} width={24} height={24} className="w-full h-full object-cover" />
+                        <Image src={exp.logo} alt={exp.company} width={28} height={28} className="w-full h-full object-contain p-0.5" />
                       ) : (
-                        <span className="text-green-400 text-[10px] font-bold">{exp.initial}</span>
+                        <span className="text-[#337ab7] text-[11px] font-bold">{exp.initial}</span>
                       )}
                     </div>
                     <div className="min-w-0">
-                      <p className="text-sm text-white font-medium leading-snug">{exp.role}</p>
-                      <p className="text-sm text-green-400/70 mt-0.5">{exp.company}</p>
+                      <p className="text-sm text-neutral-900 font-medium leading-snug">{exp.role}</p>
+                      <p className="text-sm text-[#337ab7] mt-0.5">{exp.company}</p>
                       <p className="text-xs text-neutral-600 mt-1.5 leading-relaxed">{exp.description}</p>
                     </div>
                   </div>
-                  <span className="text-xs text-neutral-600 font-mono shrink-0 mt-0.5">{exp.date}</span>
+                  <span className="text-xs text-neutral-500 font-mono shrink-0 mt-0.5">{exp.date}</span>
                 </div>
               </div>
             ))}
@@ -159,22 +159,22 @@ export default async function Home() {
 
         {/* ── Projects ── */}
         <section className="mb-20">
-          <h2 className="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-6">Projects</h2>
+          <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-6">Projects</h2>
           <div className="group/list">
             {projects.map((proj, i) => (
               <div
                 key={i}
-                className="border-b border-neutral-800/60 py-4 first:pt-0 transition-opacity duration-150 group-hover/list:opacity-40 hover:!opacity-100"
+                className="border-b border-neutral-200 py-4 first:pt-0 transition-opacity duration-150 group-hover/list:opacity-40 hover:!opacity-100"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="min-w-0">
-                    <p className="text-sm text-white font-medium leading-snug">{proj.name}</p>
+                    <p className="text-sm text-neutral-900 font-medium leading-snug">{proj.name}</p>
                     {proj.award && (
-                      <p className="text-sm text-green-400/70 mt-0.5">{proj.award}</p>
+                      <p className="text-sm text-[#337ab7] mt-0.5">{proj.award}</p>
                     )}
                     <p className="text-xs text-neutral-600 mt-1.5 leading-relaxed">{proj.description}</p>
                   </div>
-                  <span className="text-[11px] text-neutral-700 font-mono shrink-0 mt-0.5">{proj.stack}</span>
+                  <span className="text-[11px] text-neutral-500 font-mono shrink-0 mt-0.5">{proj.stack}</span>
                 </div>
               </div>
             ))}
@@ -184,9 +184,9 @@ export default async function Home() {
         {/* ── Recently Watched ── */}
         {movies.length > 0 && (
           <section className="mb-20">
-            <h2 className="text-xs font-medium text-neutral-500 uppercase tracking-widest mb-1">Recently Watched</h2>
-            <p className="text-xs text-neutral-700 mb-6">
-              <a href="https://letterboxd.com/script1234" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-800 underline-offset-2 hover:text-green-400 hover:decoration-green-400/50 transition-colors duration-150">
+            <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-1">Recently Watched</h2>
+            <p className="text-xs text-neutral-400 mb-6">
+              <a href="https://letterboxd.com/script1234" target="_blank" rel="noopener noreferrer" className="underline decoration-neutral-300 underline-offset-2 hover:text-[#337ab7] hover:decoration-[#337ab7]/50 transition-colors duration-150">
                 @script1234
               </a>
             </p>
@@ -203,15 +203,15 @@ export default async function Home() {
                     <img
                       src={movie.image}
                       alt={movie.title}
-                      className="w-[100px] h-[150px] object-cover rounded border border-neutral-800 group-hover:border-green-400/40 transition-colors duration-150"
+                      className="w-[100px] h-[150px] object-cover rounded border border-neutral-200 group-hover:border-[#337ab7]/40 transition-colors duration-150"
                     />
                   ) : (
-                    <div className="w-[100px] h-[150px] rounded border border-neutral-800 bg-neutral-900 flex items-center justify-center text-[10px] text-neutral-700">
+                    <div className="w-[100px] h-[150px] rounded border border-neutral-200 bg-neutral-50 flex items-center justify-center text-[10px] text-neutral-400">
                       No poster
                     </div>
                   )}
-                  <p className="text-xs text-neutral-400 mt-1.5 truncate">{movie.title}</p>
-                  <p className="text-green-400/70 text-xs">{formatRating(movie.rating)}</p>
+                  <p className="text-xs text-neutral-700 mt-1.5 truncate">{movie.title}</p>
+                  <p className="text-[#337ab7] text-xs">{formatRating(movie.rating)}</p>
                 </a>
               ))}
             </div>
@@ -219,10 +219,10 @@ export default async function Home() {
         )}
 
         {/* ── Footer ── */}
-        <footer className="border-t border-neutral-800/60 pt-6 pb-8">
+        <footer className="border-t border-neutral-200 pt-6 pb-8">
           <a
             href="mailto:agastyamishra2006@gmail.com"
-            className="text-xs text-neutral-600 underline decoration-neutral-800 underline-offset-2 hover:text-green-400 hover:decoration-green-400/50 transition-colors duration-150"
+            className="text-xs text-neutral-500 underline decoration-neutral-300 underline-offset-2 hover:text-[#337ab7] hover:decoration-[#337ab7]/50 transition-colors duration-150"
           >
             agastyamishra2006@gmail.com
           </a>
