@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import './globals.css';
+import ReadingShelf from './ReadingShelf';
 
 async function getLetterboxdMovies() {
   try {
@@ -103,6 +104,66 @@ export default async function Home() {
       award: null,
       stack: 'Expo, React Native, Firebase, Claude API',
       description: 'Cross-platform multiplayer trivia app shipped to 100+ beta users with 50% DAU retention and agentic daily question generation.',
+    },
+  ];
+
+  const reading = [
+    {
+      type: 'Book',
+      title: 'Our Dollar, Your Problem',
+      cover: 'https://covers.openlibrary.org/b/id/15152026-L.jpg',
+      author: 'Kenneth Rogoff',
+      note: '',
+      link: 'https://openlibrary.org/works/OL42400441W',
+    },
+    {
+      type: 'Book',
+      title: 'Notes from Underground',
+      cover: 'https://covers.openlibrary.org/b/id/10445973-L.jpg',
+      author: 'Fyodor Dostoevsky',
+      note: '',
+      link: null,
+    },
+    {
+      type: 'Book',
+      title: 'Orientalism',
+      cover: 'https://covers.openlibrary.org/b/id/254331-L.jpg',
+      author: 'Edward Said',
+      note: '',
+      link: 'https://openlibrary.org/works/OL27405W',
+    },
+  ];
+
+  // Each entry: { name, author?, note?, link }
+  const substacks = [
+    {
+      name: 'AI as Normal Technology',
+      author: 'Arvind Narayanan & Sayash Kapoor',
+      link: 'https://www.normaltech.ai',
+    },
+    {
+      name: 'FT Alphaville',
+      author: 'Financial Times',
+      link: 'https://www.ft.com/alphaville',
+    },
+    {
+      name: "Lenny's Newsletter",
+      author: 'Lenny Rachitsky',
+      link: 'https://www.lennysnewsletter.com',
+    },
+  ];
+  const youtube = [
+    {
+      name: 'Big Think',
+      link: 'https://www.youtube.com/@bigthink',
+    },
+    {
+      name: 'Premodernist',
+      link: 'https://www.youtube.com/@premodernist_history',
+    },
+    {
+      name: 'Sidemen',
+      link: 'https://www.youtube.com/@Sidemen',
     },
   ];
 
@@ -217,6 +278,18 @@ export default async function Home() {
             </div>
           </section>
         )}
+
+        {/* ── Interests & Reading ── */}
+        <section className="mb-20">
+          <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-6">Interests &amp; Reading</h2>
+          <p className="text-sm text-neutral-600 leading-6 max-w-lg">
+            {"In addition to movies, I've been reading more. Trying to be intentional about the content that I consume on a daily basis. I'm interested in learning more about AI ethics, the economics of AI, and building with agents. Shoot me recs for content at my email."}
+          </p>
+
+          <p className="text-sm text-neutral-600 leading-6 max-w-lg">
+          Here is what I've consumed this year, in addition to doom-scrolling on reels.</p>
+          <ReadingShelf books={reading} substacks={substacks} youtube={youtube} />
+        </section>
 
         {/* ── Footer ── */}
         <footer className="border-t border-neutral-200 pt-6 pb-8">
