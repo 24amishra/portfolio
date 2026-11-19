@@ -283,7 +283,7 @@ export default async function Home() {
         <section className="mb-20">
           <h2 className="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-6">Interests &amp; Reading</h2>
           <p className="text-sm text-neutral-600 leading-6 max-w-lg">
-            {"In addition to movies, I've been reading more. Trying to be intentional about the content that I consume on a daily basis. I'm interested in learning more about AI ethics, the economics of AI, and building with agents. Shoot me recs for content at my email."}
+            {"In addition to movies, I've been trying to be intentional about the content that I consume on a daily basis. I'm interested in learning more about AI ethics, the economics of AI, and building with agents. Shoot me recs for content at my email."}
           </p>
 
           <p className="text-sm text-neutral-600 leading-6 max-w-lg">
